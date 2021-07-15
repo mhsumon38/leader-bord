@@ -9,13 +9,16 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     background-color: #fff;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 
 hr {
@@ -92,4 +95,12 @@ hr {
     text-decoration: none;
     color: #562EFF;
     font-size: 16px;
+}
+
+
+/* Courses style Starat */
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
 }
