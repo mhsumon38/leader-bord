@@ -100,6 +100,12 @@ hr {
 
 /* Courses style Starat */
 
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+}
+
 .course .course-banner img {
     width: 224px;
     height: 104px;
@@ -109,4 +115,68 @@ hr {
     width: 700px;
     height: 500px;
     background: crimson;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #ffc014;
+}
+
+.fa-star.empty {
+    color: #aeaeae;
+}
+
+.course-duration {
+    color: #FF4A60;
+    background: #8a50576b;
+    border-radius: 20px;
+    padding: 0px 5px;
+}
+
+
+/* ------------
+Media Query 
+---------------*/
+
+
+/* Mobile Device */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+}
+
+
+/* tablet device */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns: 1fr;
+    }
 }
